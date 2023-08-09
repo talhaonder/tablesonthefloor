@@ -10,11 +10,13 @@
         </tr>
     </thead>
     <tbody>
+        {% for member in all_members %}
         <tr>
-            <td>Cairocoders</td>
-            <td>Ednalan</td>
-            <td>Olongapo City</td>
+            <td>{{ member.firstname }}</td>
+            <td>{{ member.lastname }}</td>
+            <td>{{ member.address }}</td>
         </tr>
+        {% endfor %}
     </tbody>
 </table>
 {% endblock %}
